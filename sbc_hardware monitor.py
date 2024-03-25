@@ -36,9 +36,9 @@ f = open('/export/home/weiqyang/SBC/me01peesb088/CiscoEnv.txt', 'r')
 f3 = open('/export/home/weiqyang/SBC/me01peesb088/alarms.txt', 'w+')
 
 import linecache
-text1=linecache.getline(r'/export/home/weiqyang/SBC/me01peesb088/CiscoEnv.txt',1)
-text2=linecache.getline(r'/export/home/weiqyang/SBC/me01peesb088/CiscoEnv.txt',2)
-text3=linecache.getline(r'/export/home/weiqyang/SBC/me01peesb088/CiscoEnv.txt',3)
+text1=linecache.getline(r'/export/home/SBC/me01peesb088/CiscoEnv.txt',1)
+text2=linecache.getline(r'/export/home/SBC/me01peesb088/CiscoEnv.txt',2)
+text3=linecache.getline(r'/export/home/SBC/me01peesb088/CiscoEnv.txt',3)
 print(text1)
 print(text2)
 print(text3)
