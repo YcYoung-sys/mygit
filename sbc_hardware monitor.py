@@ -5,9 +5,9 @@ import paramiko
 import time
 import re
 
-host = '10.254.173.112'
-username = 'weiqyang'
-password = '8$3|tB+l'
+host = 'x.x.x.x'
+username = 'xxxxxx'
+password = 'xxxxxx'
 port = 22
 
 command = 'show environment \n'
@@ -22,11 +22,11 @@ output = stdout.readlines()
 Env = (' '.join(map(str, output)))
 #print(Env)
 
-file1 = open('/export/home/weiqyang/SBC/me01peesb088/Env.txt', 'w+')
-file2 = open('/export/home/weiqyang/SBC/me01peesb088/CiscoEnv.txt', 'w')
+file1 = open('/export/home/SBC/me01peesb088/Env.txt', 'w+')
+file2 = open('/export/home/SBC/me01peesb088/CiscoEnv.txt', 'w')
 print(Env,file=file1 )
 
-with open('/export/home/weiqyang/SBC/me01peesb088/Env.txt','r',encoding = 'utf-8') as fr,open('/export/home/weiqyang/SBC/me01peesb088/CiscoEnv.txt','w',encoding = 'utf-8') as fd:
+with open('/export/home/SBC/me01peesb088/Env.txt','r',encoding = 'utf-8') as fr,open('/export/home/SBC/me01peesb088/CiscoEnv.txt','w',encoding = 'utf-8') as fd:
     for text in fr.readlines():
         if text.split():
             fd.write(text)
